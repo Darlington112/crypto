@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #ffff;
+
+}
+li{
+    list-style: none;
+
+}
+#landing-page{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(background.png);
+    background-size: cover;
+    background-position: top 30% right 5%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    color: #ffff;
+    position: relative;
+}
+#landing-page .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px 10px 30px;
+    margin: 10px 30px;
+}
+#nav-list{
+    display: flex;
+    margin-left: -400px;
+}
+#nav-list li{
+    margin: 0px 15px 0px 15px;
+}
+.container .logo{
+    display: flex;
+}
+.logo img{
+    width: 50px;
+    margin-right: 16px;
+}
+.container .btn{
+    width: 70px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid #fff;
+    text-align: center;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+#nav-list li:hover,
+.container .btn:hover{
+    opacity: 0.6;
+}
+
+.home-text{
+    margin: 100px 0px 0px 30px;
+    padding: 30px;
+}
+.home-text h1{
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 5rem;
+    margin-bottom: 10px;
+}
+h1 span{
+    color: orange;
+}
+.home-text p{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.home-text button{
+    width: 150px;
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: orange;
+    color: #fff;
+    font-size: 20px;
+}
+.home-text button:hover{
+    background-color: purple;
+}
+
+.coins{
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    display: flex;
+}
+.coins .coin{
+    display: flex;
+    margin-right: 30px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+.coin img{
+    width: 45px;
+    margin-right: 15px;
+}
+#hamburger{
+    display: none;
+}
+#close{
+    display: none;
+}
+
+@media(max-width:360px){
+    .btn{
+        display: none;
+    }
+    #hamburger{
+        display: block;
+    }
+    #close{
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    #landing-page .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 15px 10px 15px;
+        margin: 0px 10px;
+    }
+    #nav-list {
+        position: fixed;
+        top: -2.5%;
+        right: -200px;
+        width: 100px;
+        height: 100vh;
+        background-color: blueviolet;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    #landing-page .active{
+        right: 0;
+    }
+    #nav-list li {
+        margin: 50px 15px 0px 15px;
+    }
+    .home-text h1 {
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 3rem;
+        margin-bottom: 10px;
+    }
+    .home-text {
+        margin: 70px 0px 0px 15px;
+        padding-left: 15px;
+    }
+    .coins {
+        position: absolute;
+        bottom: 10%;
+        left: 10%;
+        display: flex;
+        flex-direction: column;
+    }
+    .coins .coin {
+        display: flex;
+        margin-top: 10px;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        padding: 10px 20px;
+    }
+  
+}
